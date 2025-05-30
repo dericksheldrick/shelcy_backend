@@ -1,0 +1,193 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "shelcy",
+      "isAdmin": true,
+      "email": "shelcy@example.com",
+      "password": "hashed_password",
+      "created_at": "2025-04-22T10:00:00Z",
+      "avatar_url": "https://robohash.org/${username || email}.png"
+    },
+    {
+      "id": "2",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "hashed_password",
+      "created_at": "2025-04-22T10:00:00Z",
+      "avatar_url": "https://robohash.org/${username || email}.png",
+      "isAdmin": false
+    },
+    {
+      "id": "3",
+      "username": "jane_doe",
+      "isAdmin": false,
+      "email": "jane@example.com",
+      "password": "hashed_password",
+      "created_at": "2025-04-22T10:00:00Z",
+      "avatar_url": "https://robohash.org/${username || email}.png"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Hamilton Khaki Pilot",
+      "price": 349.99,
+      "images": [
+        "/images/Hamilton.jpg",
+        "/images/HamiltonB.jpg"
+      ],
+      "category": "watches",
+      "collections": [
+        "luxury-essentials",
+        "limited-edition"
+      ],
+      "description": "A premium pilot watch with a black face, leather strap, and precise automatic movement. Features day display and luminous hands for excellent readability.",
+      "stock": 9
+    },
+    {
+      "id": "2",
+      "name": "Silver Compass Necklace Set",
+      "price": 129.99,
+      "images": [
+        "/images/dogtags.jpg",
+        "/images/dnecklace.jpg"
+      ],
+      "category": "jewelry",
+      "collections": [
+        "luxury-essentials",
+        "limited-edition"
+      ],
+      "description": "A stylish set of two silver necklaces featuring a compass and square pendant. Perfect for layering or sharing with a loved one.",
+      "stock": 20
+    },
+    {
+      "id": "3",
+      "name": "AirPods Pro with Case",
+      "price": 189.99,
+      "images": [
+        "/images/Airpod.jpg",
+        "/images/Airpods.jpg"
+      ],
+      "category": "airpods",
+      "collections": [
+        "gift-sets",
+        "limited-edition"
+      ],
+      "stock": 20,
+      "description": "APPLE AirPods Pro feature Active Noise Cancellation for immersive sound. Transparency mode for hearing the world around you. They’re sweat and water resistant and have a customizable fit for all-day comfort."
+    },
+    {
+      "id": "4",
+      "name": "Designer Blue Frame Glasses",
+      "price": 159.99,
+      "images": [
+        "/images/designer-glasses.jpg",
+        "/images/designer.jpg"
+      ],
+      "category": "accessories",
+      "collections": [
+        "travel-companions",
+        "limited-edition"
+      ],
+      "stock": 20,
+      "description": "Premium blue frame glasses with silver accents. These stylish frames offer both fashion and function with their contemporary design."
+    },
+    {
+      "id": "5",
+      "name": "Seiko",
+      "price": 299.99,
+      "images": [
+        "/images/Seiko.jpg",
+        "/images/Seikos.jpg"
+      ],
+      "category": "watches",
+      "collections": [
+        "luxury-essentials",
+        "seasonal-favorites"
+      ],
+      "stock": 19,
+      "description": "A rugged field watch with a black face and brown leather strap. Features automatic movement and date display for everyday wear."
+    },
+    {
+      "id": "6",
+      "name": "Black Luxury Bracelet Set",
+      "price": 179.99,
+      "images": [
+        "/images/bands.jpg",
+        "/images/wristband.jpg"
+       ],
+      "category": "jewelry",
+      "collections": [
+        "luxury-essentials",
+        "seasonal-favorites"
+      ],
+      "stock": 20,
+      "description": "A set of three premium black metal bracelets with different textures and designs. Perfect for stacking or wearing individually."
+    },
+    {
+      "id": "7",
+      "name": "AirPods Max",
+      "price": 349.99,
+      "images": [
+        "/images/airpod_box.jpg",
+        "/images/airpod-phone.jpg"
+       ],
+      "category": "airpods",
+      "collections": [
+        "gift-sets",
+        "seasonal-favorites"
+      ],
+      "stock": 20,
+      "description": "APPLE AirPods Pro feature Active Noise Cancellation for immersive sound. Transparency mode for hearing the world around you. They’re sweat and water resistant and have a customizable fit for all-day comfort."
+    },
+    {
+      "id": "5670",
+      "name": "Casio",
+      "price": 200.99,
+      "category": "watches",
+      "description": "Have to stand out in crowd with our casio on your hand",
+      "images": [
+        "images/Casio.jpg",
+        "images/casio-illiminator.jpg"
+       ],
+      "tags": "",
+      "stock": 22
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "user_id": 1,
+      "total_price": 59.98,
+      "ordered_at": "2025-04-22T12:00:00Z",
+      "status": "shipped"
+    }
+  ],
+  "order_items": [
+    {
+      "id": "1",
+      "order_id": 1,
+      "product_id": 1,
+      "quantity": 2
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "product_id": 1,
+      "user_id": 1,
+      "rating": 4,
+      "comment": "Great quality!",
+      "posted_on": "2025-04-22T15:00:00Z"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "admin_pass"
+    }
+  ]
+}
