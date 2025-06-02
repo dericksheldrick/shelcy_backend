@@ -19,7 +19,7 @@ This is the backend setup for Shelcy e-commerce platform. It uses **Python** and
 - Sqlite
 - SQLAlchemy (ORM)
 - dotenv (for environment variables)
-- faker (for generating fake data)
+- db.json (for generating data)
 
 ## Project structure 
 
