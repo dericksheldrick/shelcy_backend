@@ -78,8 +78,8 @@ class Review(Base):
     id = Column(Integer, primary_key = True)
     user_id = Column(Integer, ForeignKey('users.id'))
     product_id = Column(Integer, ForeignKey('products.id'))
-    content = Column(Text, nullable = False)
     rating = Column(Integer)
+    comment = Column(String)
     created_at = Column(DateTime, default = datetime.now(timezone.utc))
 
     user = relationship('User', back_populates = 'reviews', foreign_keys=[user_id])

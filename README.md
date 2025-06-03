@@ -18,7 +18,6 @@ This is the backend setup for Shelcy e-commerce platform. It uses **Python** and
 - Python 3
 - Sqlite
 - SQLAlchemy (ORM)
-- dotenv (for environment variables)
 - db.json (for generating data)
 
 ## Project structure 
@@ -26,21 +25,23 @@ This is the backend setup for Shelcy e-commerce platform. It uses **Python** and
 ```shelcy-backend/
 │
 ├── app.py
+├── cli_user.py
 ├── database.py
 ├── models.py
+├── helpers_user.py
 ├── seed.py # Script to populate the database
 ├── db.json # Product and user data used in seeding
 └── README.md
 ```
 
 ## How to run locally
-- Clone the repo, set up a virtual environment, and run `python seed.py`
+- Clone the repo, set up a virtual environment, and run `python seed.py`to add the data.To interact with it just run `python cli_user.py`
 
 ## Avatar URLS
 Avatar images are dynamically generated using Robohash, based on the user's email or username.
 
 ## Future Expansion Ideas
-- orders, cart items, and Reviews tables(currently empty)
+- placing orders
 - API server using Flask or FastAPI
 - User authentication and role management
 - Admin dashboard for managing products
